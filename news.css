@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex flex-col items-center font-serif text-gray-700 bg-gradient-to-r from-sky-100 via-gray-100 to-gray-300 min-h-screen;
+  }
+
+  .padding-container {    
+    @apply px-8 sm:px-10 md:px-12 lg:px-14 xl:px-16 2xl:px-20 py-2 sm:py-2 md:py-4 lg:py-6 xl:py-8 2xl:py-10;
+  }
+
+  h1 {
+    @apply text-4xl text-gray-700 font-semibold mb-5;
+  }
+
+  h2 {  
+    @apply  text-3xl text-gray-700 font-semibold md:mb-4;
+  }
+
+  h3 {
+    @apply  text-2xl text-gray-700 font-semibold;
+  }
+  
+  h4 {
+    @apply  text-xl text-gray-700 font-semibold;
+  }
+
+  p {
+    @apply mt-2 text-balance  text-gray-700;
+  }
+
+  .flexColStart {
+    @apply flex flex-col items-center md:items-start justify-center;
+  }
+
+  .logo {
+    @apply h-20 md:h-28 w-fit aspect-auto object-center rounded-full shadow-lg  shadow-sky-900;
+  }
+
+}
+
+
+@layer components {
+  .nav {
+    @apply md:py-2 md:px-5 text-base bg-white shadow-sky-900 shadow-lg border-gray-100 border-2 rounded-full opacity-80 text-black;
+   }
+ 
+   .prof {
+    @apply  md:w-32 md:p-1 bg-white shadow border-gray-200 rounded-3xl  hover:shadow-sky-100 hover:shadow-xl hover:text-sky-700 hover:font-bold transition-colors duration-300;
+   }
+ 
+   .sign-in {
+     @apply md:w-32 md:mr-2 md:py-2 bg-white shadow border-gray-200 border-2 rounded-s-3xl rounded-tr-[10px] rounded-br-[10px] border-none hover:shadow-sky-100 hover:shadow-xl hover:text-sky-700 hover:font-bold transition-colors duration-300;
+   }
+ 
+   .log-in {
+     @apply md:w-16 md:py-2 bg-white shadow border-gray-200 border-2 rounded-e-3xl rounded-tl-[10px] rounded-bl-[10px] border-none hover:shadow-sky-100 hover:shadow-xl hover:text-sky-700 hover:font-bold transition-colors duration-300;
+   }
+
+   .li-hover {
+    /* hover:font-semibold */
+    @apply border-none hover:shadow-sky-100 hover:shadow-xl hover:text-sky-900  transition-all duration-300;
+  }
+
+  span {
+    @apply text-4xl text-sky-900 underline;
+  }
+
+  .button-packs {
+    @apply w-32 md:w-48 rounded-full bg-sky-100 md:px-4 py-2 text-[#203754] text-sm md:text-xl border-2 border-cyan-900 hover:bg-[#203754] hover:text-sky-100 hover:border-2 hover:border-sky-100;
+  }
+
+  .box {
+    @apply flex flex-col items-center justify-center p-5 bg-gradient-to-r from-gray-300 via-gray-100 to-sky-100 rounded-sm shadow-sky-900 shadow-md ;
+  }
+  .slide {
+    @apply w-full;
+  }
+
+  .slider {
+    @apply relative overflow-hidden;
+  }
+
+.slides {
+    @apply flex transition-transform duration-700 ease-in-out;
+}
+
+.inf-box {
+  @apply flex flex-col items-center justify-end text-center mt-20 pt-20 pb-4 px-2 rounded-2xl shadow-sm shadow-sky-900 bg-slate-200;
+}
+
+.pack-one {
+  @apply hover:bg-blue-100 hover:z-40 hover:border-black hover:shadow-xl hover:shadow-sky-900 transition-all duration-150;
+}
+
+.pack-two {
+  @apply hover:bg-sky-100 hover:z-40 hover:border-black hover:shadow-xl hover:shadow-sky-900 transition-all duration-150;
+}
+}
